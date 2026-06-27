@@ -1,0 +1,31 @@
+experiment,split,model_name,n_subjects,acc_mean,acc_std,kappa_mean,kappa_source,confusion_matrix
+ablation,valid,SE_MDTCN,15,0.7811111187934876,0.06819284793616731,0.7263888984918595,computed_from_acc_mean_with_chance_level_0.2,
+ablation,valid,SE_MDTCN_wDWConvSpatialFilter2D,15,0.656444452603658,0.10267430180634415,0.5705555657545724,computed_from_acc_mean_with_chance_level_0.2,
+ablation,valid,SE_MDTCN_wTemporalFilter2D,15,0.6631111248334248,0.10236463372209509,0.578888906041781,computed_from_acc_mean_with_chance_level_0.2,
+ablation,valid,SE_MDTCN_wZScoreNormalization,15,0.7555555637677511,0.07425468147499276,0.694444454709689,computed_from_acc_mean_with_chance_level_0.2,
+ablation,valid,SE_MDTCN_woElectrodeNormalization,15,0.7200000111262004,0.07822434229128271,0.6500000139077505,computed_from_acc_mean_with_chance_level_0.2,
+ablation,valid,SE_MDTCN_woSpatialFilter,15,0.7504444575309753,0.07199942251291624,0.688055571913719,computed_from_acc_mean_with_chance_level_0.2,
+ablation,valid,SE_MDTCN_woTemporalFilter,15,0.7655555621782939,0.07117680986881993,0.7069444527228674,computed_from_acc_mean_with_chance_level_0.2,
+ablation,test,SE_MDTCN,15,0.744,0.0846674165696074,0.6799999999999999,cohen_kappa_from_test_records,"[[216, 20, 21, 29, 14], [24, 225, 11, 25, 15], [17, 27, 223, 21, 12], [16, 27, 20, 226, 11], [16, 15, 18, 25, 226]]"
+ablation,test,SE_MDTCN_wDWConvSpatialFilter2D,15,0.578,0.1090347257921596,0.4725,cohen_kappa_from_test_records,"[[171, 42, 29, 38, 20], [43, 168, 39, 31, 19], [30, 32, 193, 26, 19], [37, 35, 29, 168, 31], [29, 31, 45, 28, 167]]"
+ablation,test,SE_MDTCN_wTemporalFilter2D,15,0.5873333333333334,0.11385872616453042,0.48416666666666663,cohen_kappa_from_test_records,"[[176, 37, 24, 28, 35], [40, 166, 32, 38, 24], [19, 31, 180, 35, 35], [34, 29, 24, 182, 31], [18, 24, 36, 45, 177]]"
+ablation,test,SE_MDTCN_wZScoreNormalization,15,0.7053333333333334,0.08757581749275202,0.6316666666666666,cohen_kappa_from_test_records,"[[208, 25, 17, 32, 18], [26, 203, 22, 29, 20], [21, 17, 218, 21, 23], [17, 29, 23, 216, 15], [14, 17, 28, 28, 213]]"
+ablation,test,SE_MDTCN_woElectrodeNormalization,15,0.648,0.08436316054500834,0.56,cohen_kappa_from_test_records,"[[184, 38, 23, 42, 13], [28, 194, 19, 34, 25], [24, 34, 192, 36, 14], [28, 23, 20, 202, 27], [17, 28, 28, 27, 200]]"
+ablation,test,SE_MDTCN_woSpatialFilter,15,0.6953333333333334,0.10756172093046769,0.6191666666666666,cohen_kappa_from_test_records,"[[207, 27, 24, 26, 16], [29, 204, 23, 28, 16], [19, 26, 211, 26, 18], [20, 24, 25, 214, 17], [16, 20, 28, 29, 207]]"
+ablation,test,SE_MDTCN_woTemporalFilter,15,0.7026666666666668,0.09698797176282567,0.6283333333333334,cohen_kappa_from_test_records,"[[214, 25, 23, 26, 12], [27, 208, 14, 37, 14], [18, 28, 215, 26, 13], [22, 26, 25, 209, 18], [18, 24, 23, 27, 208]]"
+model_comparison,valid,DGCNN,15,0.5553333421548208,0.05937238194072528,0.4441666776935259,computed_from_acc_mean_with_chance_level_0.2,
+model_comparison,valid,EEGConformer,15,0.4364444454511006,0.030975330625139023,0.29555555681387574,computed_from_acc_mean_with_chance_level_0.2,
+model_comparison,valid,EEGNet,15,0.3902222235997517,0.03332062982776975,0.23777777949968965,computed_from_acc_mean_with_chance_level_0.2,
+model_comparison,valid,EEGTCNet,15,0.3822222248713175,0.036939818154294535,0.22777778108914687,computed_from_acc_mean_with_chance_level_0.2,
+model_comparison,valid,HS_STDCN,15,0.36577778061230976,0.038368856690442724,0.20722222576538718,computed_from_acc_mean_with_chance_level_0.2,
+model_comparison,valid,SE_MDTCN_clean,15,0.7548888953526816,0.0636691242471433,0.6936111191908519,computed_from_acc_mean_with_chance_level_0.2,
+model_comparison,valid,SE_MDTCN_raw,15,0.7811111187934876,0.06819284793616731,0.7263888984918595,computed_from_acc_mean_with_chance_level_0.2,
+model_comparison,valid,TSception_Full,15,0.5924444476763407,0.05771394141548969,0.4905555595954259,computed_from_acc_mean_with_chance_level_0.2,
+model_comparison,test,DGCNN,15,0.504,0.09171384067537772,0.37999999999999995,cohen_kappa_from_test_records,"[[152, 37, 37, 49, 25], [38, 151, 40, 45, 26], [37, 37, 157, 28, 41], [33, 48, 39, 155, 25], [33, 35, 52, 39, 141]]"
+model_comparison,test,EEGConformer,15,0.36933333333333335,0.051750316309132245,0.21166666666666661,cohen_kappa_from_test_records,"[[96, 65, 40, 47, 52], [45, 129, 30, 55, 41], [29, 71, 107, 36, 57], [42, 63, 43, 107, 45], [27, 55, 56, 47, 115]]"
+model_comparison,test,EEGNet,15,0.288,0.05634079973061896,0.10999999999999996,cohen_kappa_from_test_records,"[[85, 42, 66, 64, 43], [43, 69, 50, 66, 72], [42, 50, 88, 66, 54], [29, 51, 73, 96, 51], [30, 51, 76, 49, 94]]"
+model_comparison,test,EEGTCNet,15,0.3053333333333333,0.05356793639411369,0.13166666666666663,cohen_kappa_from_test_records,"[[76, 64, 47, 55, 58], [50, 102, 51, 45, 52], [44, 61, 78, 56, 61], [53, 50, 55, 97, 45], [45, 54, 51, 45, 105]]"
+model_comparison,test,HS_STDCN,15,0.26666666666666666,0.06241184258807054,0.08333333333333329,cohen_kappa_from_test_records,"[[68, 60, 57, 69, 46], [56, 83, 50, 65, 46], [54, 57, 75, 68, 46], [63, 56, 46, 91, 44], [52, 59, 58, 48, 83]]"
+model_comparison,test,SE_MDTCN_clean,15,0.6906666666666667,0.08489208836320772,0.6133333333333333,cohen_kappa_from_test_records,"[[201, 37, 15, 28, 19], [26, 213, 15, 24, 22], [23, 28, 209, 24, 16], [15, 23, 28, 210, 24], [16, 30, 32, 19, 203]]"
+model_comparison,test,SE_MDTCN_raw,15,0.744,0.0846674165696074,0.6799999999999999,cohen_kappa_from_test_records,"[[216, 20, 21, 29, 14], [24, 225, 11, 25, 15], [17, 27, 223, 21, 12], [16, 27, 20, 226, 11], [16, 15, 18, 25, 226]]"
+model_comparison,test,TSception_Full,15,0.5046666666666667,0.08559595005995707,0.3808333333333333,cohen_kappa_from_test_records,"[[131, 41, 33, 58, 37], [40, 132, 33, 63, 32], [25, 32, 155, 35, 53], [30, 37, 31, 172, 30], [25, 27, 40, 41, 167]]"

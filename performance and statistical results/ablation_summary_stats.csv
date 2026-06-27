@@ -1,0 +1,15 @@
+experiment,split,model_name,n_subjects,acc_mean,acc_std,kappa_mean,kappa_source,confusion_matrix
+ablation,valid,SE_MDTCN,15,0.7811111187934876,0.06819284793616731,0.7263888984918595,computed_from_acc_mean_with_chance_level_0.2,
+ablation,valid,SE_MDTCN_wDWConvSpatialFilter2D,15,0.656444452603658,0.10267430180634415,0.5705555657545724,computed_from_acc_mean_with_chance_level_0.2,
+ablation,valid,SE_MDTCN_wTemporalFilter2D,15,0.6631111248334248,0.10236463372209509,0.578888906041781,computed_from_acc_mean_with_chance_level_0.2,
+ablation,valid,SE_MDTCN_wZScoreNormalization,15,0.7555555637677511,0.07425468147499276,0.694444454709689,computed_from_acc_mean_with_chance_level_0.2,
+ablation,valid,SE_MDTCN_woElectrodeNormalization,15,0.7200000111262004,0.07822434229128271,0.6500000139077505,computed_from_acc_mean_with_chance_level_0.2,
+ablation,valid,SE_MDTCN_woSpatialFilter,15,0.7504444575309753,0.07199942251291624,0.688055571913719,computed_from_acc_mean_with_chance_level_0.2,
+ablation,valid,SE_MDTCN_woTemporalFilter,15,0.7655555621782939,0.07117680986881993,0.7069444527228674,computed_from_acc_mean_with_chance_level_0.2,
+ablation,test,SE_MDTCN,15,0.744,0.0846674165696074,0.6799999999999999,cohen_kappa_from_test_records,"[[216, 20, 21, 29, 14], [24, 225, 11, 25, 15], [17, 27, 223, 21, 12], [16, 27, 20, 226, 11], [16, 15, 18, 25, 226]]"
+ablation,test,SE_MDTCN_wDWConvSpatialFilter2D,15,0.578,0.1090347257921596,0.4725,cohen_kappa_from_test_records,"[[171, 42, 29, 38, 20], [43, 168, 39, 31, 19], [30, 32, 193, 26, 19], [37, 35, 29, 168, 31], [29, 31, 45, 28, 167]]"
+ablation,test,SE_MDTCN_wTemporalFilter2D,15,0.5873333333333334,0.11385872616453042,0.48416666666666663,cohen_kappa_from_test_records,"[[176, 37, 24, 28, 35], [40, 166, 32, 38, 24], [19, 31, 180, 35, 35], [34, 29, 24, 182, 31], [18, 24, 36, 45, 177]]"
+ablation,test,SE_MDTCN_wZScoreNormalization,15,0.7053333333333334,0.08757581749275202,0.6316666666666666,cohen_kappa_from_test_records,"[[208, 25, 17, 32, 18], [26, 203, 22, 29, 20], [21, 17, 218, 21, 23], [17, 29, 23, 216, 15], [14, 17, 28, 28, 213]]"
+ablation,test,SE_MDTCN_woElectrodeNormalization,15,0.648,0.08436316054500834,0.56,cohen_kappa_from_test_records,"[[184, 38, 23, 42, 13], [28, 194, 19, 34, 25], [24, 34, 192, 36, 14], [28, 23, 20, 202, 27], [17, 28, 28, 27, 200]]"
+ablation,test,SE_MDTCN_woSpatialFilter,15,0.6953333333333334,0.10756172093046769,0.6191666666666666,cohen_kappa_from_test_records,"[[207, 27, 24, 26, 16], [29, 204, 23, 28, 16], [19, 26, 211, 26, 18], [20, 24, 25, 214, 17], [16, 20, 28, 29, 207]]"
+ablation,test,SE_MDTCN_woTemporalFilter,15,0.7026666666666668,0.09698797176282567,0.6283333333333334,cohen_kappa_from_test_records,"[[214, 25, 23, 26, 12], [27, 208, 14, 37, 14], [18, 28, 215, 26, 13], [22, 26, 25, 209, 18], [18, 24, 23, 27, 208]]"
